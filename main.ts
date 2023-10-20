@@ -39,6 +39,9 @@ input.onButtonPressed(Button.B, function () {
 // comparing numbers
 
 input.onGesture(Gesture.Shake, function () {
+  //clean up
+  basic.clearScreen()
+  
   if (num1 < num2) {
     basic.showString(num1 + '<' + num2)
   } else {
