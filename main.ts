@@ -6,20 +6,17 @@
 */
 
 // start up
-
 basic.clearScreen()
 basic.pause(1000)
 basic.showIcon(IconNames.Happy)
 
 // variables
-
 let num1: number = randint(0, 99)
 let num2: number = randint(0, 99)
 num1 = randint(0, 99)
 num2 = randint(0, 99)
 
 // on button A (show num1)
-
 input.onButtonPressed(Button.A, function () {
   basic.showString('#1')
   basic.showNumber(num1)
@@ -28,7 +25,6 @@ input.onButtonPressed(Button.A, function () {
 })
 
 // on button B (show num2)
-
 input.onButtonPressed(Button.B, function () {
   basic.showString('#2')
   basic.showNumber(num2)
@@ -37,7 +33,6 @@ input.onButtonPressed(Button.B, function () {
 })
 
 // comparing numbers
-
 input.onGesture(Gesture.Shake, function () {
   // clean up
   basic.clearScreen()
