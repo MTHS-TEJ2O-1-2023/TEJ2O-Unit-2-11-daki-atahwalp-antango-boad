@@ -47,8 +47,8 @@ input.onGesture(Gesture.Shake, function () {
     basic.showString('<')
     basic.showNumber(num2)
   } else {
-    basic.showNumber(num2)
-    basic.showString('<')
     basic.showNumber(num1)
+    basic.showString('>')
+    basic.showNumber(num2)
   }
 })
