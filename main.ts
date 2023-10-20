@@ -26,7 +26,5 @@ input.onButtonPressed(Button.B, function () {
 
 input.onGesture(Gesture.Shake, function () {
   if (num1 > num2)
-    basic.showNumber((num1 + basic.showString('>') (num2)
-
+     basic.showString(num1 + '>', num2)
 })
-
