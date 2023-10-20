@@ -39,12 +39,16 @@ input.onButtonPressed(Button.B, function () {
 // comparing numbers
 
 input.onGesture(Gesture.Shake, function () {
-  //clean up
+  // clean up
   basic.clearScreen()
-  
+
   if (num1 < num2) {
-    basic.showString(num1 + '<' + num2)
+    basic.showNumber(num1)
+    basic.showString('<')
+    basic.showNumber(num2)
   } else {
-    basic.showString(num2 + '<' + num1)
+    basic.showNumber(num2)
+    basic.showString('<')
+    basic.showNumber(num1)
   }
 })
