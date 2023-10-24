@@ -40,13 +40,13 @@ input.onGesture(Gesture.Shake, function () {
   basic.clearScreen()
 
   if (num1 < num2) {
-     basic.showNumber(num1)
-      basic.showString('<')
-      basic.showNumber(num2)
+    basic.showNumber(num1)
+    basic.showString('<')
+    basic.showNumber(num2)
   } else {
-      basic.showNumber(num1)
-      basic.showString('>')
-      basic.showNumber(num2)
+    basic.showNumber(num1)
+    basic.showString('>')
+    basic.showNumber(num2)
   }
   basic.showIcon(IconNames.Sad)
   basic.pause(1000)
