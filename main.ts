@@ -5,16 +5,18 @@
  * This program compares two numbers
 */
 
-// start up
-basic.clearScreen()
-basic.pause(1000)
-basic.showIcon(IconNames.Happy)
 
 // variables
 let num1: number = randint(0, 99)
 let num2: number = randint(0, 99)
+
+// start up
+basic.clearScreen()
+basic.pause(1000)
+basic.showIcon(IconNames.Happy)
 num1 = randint(0, 99)
 num2 = randint(0, 99)
+basic.clearScreen()
 
 // on button A (show num1)
 input.onButtonPressed(Button.A, function () {
@@ -38,14 +40,15 @@ input.onGesture(Gesture.Shake, function () {
   basic.clearScreen()
 
   if (num1 < num2) {
-    basic.showNumber(num1)
-    basic.showString('<')
-    basic.showNumber(num2)
-    basic.showIcon(IconNames.Sad)
+     basic.showNumber(num1)
+      basic.showString('<')
+      basic.showNumber(num2)
   } else {
-    basic.showNumber(num1)
-    basic.showString('>')
-    basic.showNumber(num2)
-    basic.showIcon(IconNames.Sad)
+      basic.showNumber(num1)
+      basic.showString('>')
+      basic.showNumber(num2)
   }
+  basic.showIcon(IconNames.Sad)
+  basic.pause(1000)
+  basic.clearScreen()
 })
