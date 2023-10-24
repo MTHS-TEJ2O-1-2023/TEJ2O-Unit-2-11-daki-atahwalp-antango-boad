@@ -18,7 +18,7 @@ num2 = randint(0, 99)
 
 // on button A (show num1)
 input.onButtonPressed(Button.A, function () {
-  basic.showString('#1')
+  basic.showString('#1:')
   basic.showNumber(num1)
   basic.showIcon(IconNames.Happy)
   basic.clearScreen()
@@ -26,7 +26,7 @@ input.onButtonPressed(Button.A, function () {
 
 // on button B (show num2)
 input.onButtonPressed(Button.B, function () {
-  basic.showString('#2')
+  basic.showString('#2:')
   basic.showNumber(num2)
   basic.showIcon(IconNames.Happy)
   basic.clearScreen()
@@ -41,9 +41,11 @@ input.onGesture(Gesture.Shake, function () {
     basic.showNumber(num1)
     basic.showString('<')
     basic.showNumber(num2)
+    basic.showIcon(IconNames.Sad)
   } else {
     basic.showNumber(num1)
     basic.showString('>')
     basic.showNumber(num2)
+    basic.showIcon(IconNames.Sad)
   }
 })
